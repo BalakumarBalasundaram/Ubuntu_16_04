@@ -1,1 +1,7 @@
+Mysql Installation
+https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+systemctl start mysql
+/usr/bin/mysql -u root -p
+SELECT User, Host, authentication_string FROM mysql.user;
+
 
