@@ -15,3 +15,4 @@ GRANT ALL PRIVILEGES ON demo.* to demo@localhost;
 FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'demo'@'localhost';
 
+https://github.com/jkuchar/EditableDatagrid/blob/81a4b7f938b827b8a7ed95493c00d0bf9b118b3f/app/models/DataGrid/birt.sqlite.sql
