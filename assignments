@@ -2,6 +2,16 @@ Mysql Installation
 https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
 systemctl start mysql
 /usr/bin/mysql -u root -p
+
+CREATE DATABASE demodb;
+
+INSERT INTO mysql.user (User,Host,authentication_string,ssl_cipher,x509_issuer,x509_subject)
+VALUES('demo','localhost',PASSWORD('demo'),'','','');
+FLUSH PRIVILEGES;
+
 SELECT User, Host, authentication_string FROM mysql.user;
 
+GRANT ALL PRIVILEGES ON demo.* to demo@localhost;
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'demo'@'localhost';
 
