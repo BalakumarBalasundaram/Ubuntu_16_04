@@ -11,9 +11,10 @@ ARTIFACT_URL="${NEXUS_URL}/${REPOSITORY_ID}/${GROUP_ID_URL}/${ARTIFACT_ID}/${VER
 
 
 # Download the jar file from Nexus
-# Example: http://localhost:8081/repository/maven-releases/com/example/demo/1.0-SNAPSHOT/demo-2.0.0.jar
 LATEST_ARTIFACT_URL="${ARTIFACT_URL}/${ARTIFACT_ID}-${VERSION}.jar"
 
-
+Download
+http://localhost:8082/nexus/content/repositories//snapshots/com/mycompany/demo/1.0-SNAPSHOT/demo-1.0-SNAPSHOT.jar 
+to /home/U597989
 echo "Download ${LATEST_ARTIFACT_URL} to ${DESTINATION_DIR}"
 curl -o "${DESTINATION_DIR}/${ARTIFACT_ID}-${VERSION}.jar" "${LATEST_ARTIFACT_URL}"
