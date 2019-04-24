@@ -7,3 +7,6 @@ curl -v \
     -F "file=@./jpa-criteria-4.0.jar" \
     -u admin:admin123 \
     http://localhost:8082/nexus/service/local/artifact/maven/content
+    
+    File is upload in this path
+    http://localhost:8082/nexus/content/repositories/releases/test/upload/jpa/jpa-criteria/4.0/
