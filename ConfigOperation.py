@@ -143,5 +143,5 @@ if __name__ == "__main__":
     delete_setting(path, "Settings", "font_style")
 
     configpath = "deployment_history.ini"
-    add_setting(configpath, 'E2E1', 'branch', 'R19.7')
-    update_setting(configpath, 'E2E1', 'status', 'initial')
+    add_setting(configpath, 'ESE1', 'branch', 'dummy')
+    update_setting(configpath, 'ESE1', 'status', 'initial')
