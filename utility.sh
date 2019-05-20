@@ -2,7 +2,7 @@
 
 BKP_PREFIX="BKP"
 
-function create_backups() {
+function xxx() {
   local component_name=${1}
   local target_folder=${2}
   local backup_folder="${BACKUP_DIR}/${BKP_PREFIX}${NOW}"
@@ -18,7 +18,7 @@ function create_backups() {
 }
 
 
-function cleanup_target_folders() {
+function yyy() {
   local component_name=${1}
   local target_folder=${2}
   log_status "Cleaning up target folder \"${target_folder}\" for component ${component_name}..."
@@ -33,7 +33,7 @@ function cleanup_target_folders() {
 }
 
 
-function install_component() {
+function zzz() {
   local component_name=${1}
   local source_folder=${2}
   local target_folder=${3}
