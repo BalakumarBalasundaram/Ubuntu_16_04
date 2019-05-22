@@ -2,8 +2,6 @@
 
 BKP_PREFIX="BKP"
 
-#!/usr/bin/env bash
-
 source $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/color.sh
 
 function getDiffDay()
